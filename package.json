@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "predeploy": "npm uninstall sharp && npm install --platform=linux --arch=x64 --target=14.x sharp",
+    "deploy": "serverless deploy -v",
+    "postdeploy": "npm uninstall sharp && npm install sharp"
+  },
+  "dependencies": {
+    "sharp": "^0.29.2"
+  }
+}
